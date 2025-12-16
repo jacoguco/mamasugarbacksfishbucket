@@ -13,6 +13,10 @@ header {
   padding: 20px;
 }
 
+.ingredients{
+  color: red;
+}
+
 .bruhmomt {
   width: 350px;
   height: 200px;
@@ -25,8 +29,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
 }
 
 ul, ol {
@@ -58,3 +60,4 @@ footer {
   padding: 15px;
   font-size: 14px;
 }
+
