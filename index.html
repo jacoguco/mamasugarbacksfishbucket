@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"><script src="fish.js"></script>
   </head>
   <body>
     <header>
@@ -29,7 +29,7 @@
     </section>
 
     <section class="instructions">
-      <h4>Instructions</h4>
+      <h4 id="demo">Instructions</h4>
       <ol>
         <li>Gut the fish and disgard of the contents and collect all of the blood</li>
         <li>Next, remove all of the fish meat while leaving the head alone</li>
@@ -37,20 +37,33 @@
         <li>Place all blood into the bucket then mix</li>
       </ol>
     </section>
+    <button onclick="instructionsRed()">Make instructions red</button>
 
-    <section class="video">
+    <p>Theme</p>
+
+<select id="mySelect" onchange="theme()">
+  <option value="light">Light Mode</option>
+  <option value="dark">Dark Mode</option>
+</select>
+
+<p id="themeResult"></p>
+
+    <footer>
+      <div id ="vid">Inspired by the soulful cooking from a Key and Peele skit</div>
+      <section class="video">
       <h4>Video Inspiration</h4>
       <iframe width="560" height="315"
         src="https://www.youtube.com/embed/3zDHSLDY0Q8"
         title="Video Player"
         frameborder=0
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="autoplay; picture-in-picture"
         allowfullscreen>
       </iframe>
     </section>
+    <p>Rating???</p>
+Scale of 1-10: <input type="text" name="txt" value="10" onchange="changeRating(this.value)">
 
-    <footer>
-      <p>Inspired by the soulful cooking from a Key and Peele skit</p>
+
     </footer>
   </body>
 </html>
